@@ -17,4 +17,33 @@
     .historia .conteudo img{
         width: 80%;
     }
+
+    .historia #msg{
+        width: 400px;
+    }
+}
+
+@media(max-width: 625px){
+    .cabecalho{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px){
+    .historia #msg{
+        width: 300px;
+        padding: 0;
+    }
+
+    main{
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px){
+    .historia #msg{
+        width: 260px;
+        padding: 0;
+    }
 }
