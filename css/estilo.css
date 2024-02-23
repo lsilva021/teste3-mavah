@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+    --rosa01: #E1B8B2;
+    --marrom01: #815B48;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+main{
+    background-image: url(../imagens/cerejeira.png);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 100px;
+}
+
+body{
+    height: 100vh;
+    background-color: #815B48;
+}
+
+.cabecalho{
+    border-bottom: 1px solid #795a40;
+    background-color: #E1B8B2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 0;
+    align-items: end;
+    color: #694a3b;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.cabecalho .logo-nome{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.cabecalho img{
+    width: 10%;
+    margin-left: 8px;
+}
+
+.cabecalho hr{
+    height: 30px;
+    border: 1px solid #9A724F;
+}
+
+.cabecalho span{
+    font-size: 2em;
+    font-family: 'Whisper';
+}
+
+.cabecalho .menu{
+    display: flex;
+    margin-right: 20px;
+}
+
+.cabecalho .menu > ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.cabecalho .menu li a{
+    text-decoration: none;
+    color: #694a3b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.cabecalho .menu > ul li a:hover{
+    background-color: #ac795f;
+    color: white;
+}
+
+.sub-menu{
+    text-align: center;
+    position: absolute;
+    box-shadow: 1px 2px #c29f9a;
+    display: none;
+    background-color: #e1b8b2b4;
+    border-top: none;
+    margin-top: 0.6%;
+    padding: 8px;
+    border-radius: 0px 0px 10px 10px;
+}
+.dropdown #sobre{
+    position: absolute;
+    margin-left: -45px;
+}
+
+.dropdown #sobre a:hover{
+    background-color: #ac795f;
+}
+
+.dropdown #contatos{
+    margin-left: -13px;
+}
+
+.dropdown #contatos a:hover{
+    background-color: #ac795f;
+}
+
+.dropdown:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu a{
+    display: block;
+}
+
+.titulo{
+    background-image: linear-gradient(to right, #9a724f7c, transparent);
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    color: rgb(228, 227, 227);
+    text-shadow: 1px 2px grey;
+}
+
+
+main img{
+    box-shadow: 1px 1px 3px #9A724F;
+}
+
+.titulo-secundario{
+    font-size: 24px;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    color: #745140;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.conteudo{
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(255, 192, 203, 0.192);
+}
+
+section{
+    margin-left: 7%;
+    padding-top: 80px;
+    margin-bottom: 48px;
+}
+
+.quem-somos{
+    max-width: 100%;
+    height: 550px;
+}
+
+.quem-somos .descricao{
+    width: 100%;
+}
+
+.quem-somos .descricao .container{
+    display: flex;
+}
+
+
+.quem-somos .conteudo{
+    max-width: 80%;
+    background-color: var(--rosa01);
+}
+
+.quem-somos .conteudo img{
+    width: 100%;
+    max-height: 350px;
+    padding: 20px;
+}
+
+p{
+    font-family: 'titillium web';
+    color: #745140;
+    font-weight: 600;
+    text-wrap: wrap;
+    max-width: 600px;
+    padding: 0px 0px 20px 20px;
+    text-indent: 20px;
+}
+
+.historia .conteudo{
+    display: flex;
+    background-color: var(--rosa01);
+    width: 95%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.historia .conteudo img{
+    width: 60%;
+    height: 50%;
+}
+
+.historia .conteudo .texto{
+    max-width: 100%;
+}
+
+#titulo-historia{
+    padding-top: 30px;
+    font-size: 2.2em;
+}
+
+#titulo-missao{
+    font-size: 1.6em;
+}
+
+.missao .conteudo{
+    background-color: var(--rosa01);
+    max-width: 65%;
+    min-width: 450px;
+}
+
+.missao .conteudo .iniciais::first-letter{
+    font-size: 40px;
+    font-weight: 300;
+    color: brown;
+}
+
+.missao .conteudo .texto{
+    padding: 20px;
+}
+
+.missao .conteudo .texto > p{
+    padding: 0;
+}

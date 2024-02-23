@@ -1,0 +1,20 @@
+@media (max-width: 1024px){
+    .historia .conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia .conteudo img{
+        width: 60%;
+    }
+
+    .historia .conteudo p{
+        text-align: justify;
+    }
+}
+
+@media (max-width: 725px){
+    .historia .conteudo img{
+        width: 80%;
+    }
+}
